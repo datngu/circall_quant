@@ -73,6 +73,11 @@ chnames[which(chnames=="MT")]="M"
 names(genome)=chnames
 
 info = fread(circrna_path, header = T)
+info$chr = as.character(info$chr)
+info$start = as.integer(info$start)
+info$end = as.integer(info$end)
+info$strand = as.character(info$strand)
+
 info$chr[which(info$chr=="MT")]="M"
 
 
