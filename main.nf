@@ -58,6 +58,7 @@ workflow {
     CIRCALL_index_cdna(params.cdna)
     RECOUNT_get_peseudo_seqs(params.genome, params.circRNA)
     RECOUNT_index_peseudo_seqs(RECOUNT_get_peseudo_seqs.out)
+    RECOUNT_mapping(CIRCALL_index_cdna.out, RECOUNT_index_peseudo_seqs.out, read_pairs_ch)
     RECOUNT_count(RECOUNT_mapping.out)
 }
 
