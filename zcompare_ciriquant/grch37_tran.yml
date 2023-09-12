@@ -8,5 +8,5 @@ tools:
 reference:
   fasta: /mnt/project/Aqua-Faang/dat/cscqtl/simulation/circall_quant/data/ref/genome.fa
   gtf: /mnt/project/Aqua-Faang/dat/cscqtl/simulation/circall_quant/data/ref/annotation.gtf
-  bwa_index: /mnt/project/Aqua-Faang/dat/cscqtl/simulation/circall_quant/ref/genome.fa
+  bwa_index: /mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/trace_dir/bwa_index/genome.fa
   hisat_index: /mnt/project/Aqua-Faang/dat/cscqtl/simulation/circall_quant/zcompare_ciriquant/grch37_tran/genome_tran
