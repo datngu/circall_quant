@@ -23,7 +23,7 @@ params.annotation      = "$baseDir/data/ref/annotation.gtf"
 // RNA seqs
 params.reads           = "$baseDir/data/reads/*_{1,2}.fastq.gz"
 // circRNA list: list of highly confident circRNAs (typically consensus from various circRNA detection tools)
-params.circRNA         = "$baseDir/data/circRNA_list.txt"
+params.circRNA         = "$baseDir/data/simulated_circRNA_list.txt"
 // outputs trace_dir is softlinked reuslts all of stages - for debugging, outdir is the main output (hard copied).
 params.trace_dir       = "trace_dir"
 params.outdir          = "results"
