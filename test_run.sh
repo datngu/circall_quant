@@ -8,10 +8,12 @@
 #SBATCH --mail-type=ALL
 
 
+#module load git/2.23.0-GCCcore-9.3.0-nodocs
+module load Nextflow/21.03
+module load singularity/rpm
+
 export TOWER_ACCESS_TOKEN=eyJ0aWQiOiA3OTAxfS4xNGY5NTFmOWNiZmEwNjZhOGFkYzliZTg3MDc4YWI4ZTRiYTk4ZmI5
-
-
-#cd /mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev
+export NXF_SINGULARITY_CACHEDIR=/mnt/users/ngda/sofware/singularity
 
 
 reads="/mnt/project/Aqua-Faang/dat/cscqtl/simulation/*_{1,2}.fq.gz"
