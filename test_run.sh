@@ -19,4 +19,4 @@ export NXF_SINGULARITY_CACHEDIR=/mnt/users/ngda/sofware/singularity
 reads="/mnt/project/Aqua-Faang/dat/cscqtl/simulation/*{1,2}.fq.gz"
 
 
-nextflow run main.nf -resume -with-tower -profile cluster --reads /mnt/project/Aqua-Faang/dat/cscqtl/simulation/*_{1,2}.fq.gz --circRNA $PWD/data/simulated_circRNA_list.txt
+nextflow run main.nf -resume -with-tower -profile cluster --reads /mnt/project/Aqua-Faang/dat/cscqtl/simulation/*{1,2}.fq.gz --circRNA $PWD/data/simulated_circRNA_list.txt
