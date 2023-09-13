@@ -29,7 +29,7 @@ params.trace_dir       = "trace_dir"
 params.outdir          = "results"
 
 // run ciriquant
-params.ciriquant_param = "$baseDir/zcompare_ciriquant/grch37_tran.yml"
+params.ciriquant_param = "$baseDir/zcompare_ciriquant/grch38_tran.yml"
 
 
 

@@ -1,0 +1,12 @@
+name: grch38_tran
+tools:
+  bwa: /bin/bwa
+  hisat2: /bin/hisat2
+  stringtie: /bin/stringtie
+  samtools: /bin/samtools
+
+reference:
+  fasta: /mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/genome.fa
+  gtf: /mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/annotation.gtf
+  bwa_index: /mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/trace_dir/bwa_index/genome.fa
+  hisat_index: /mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/grch38_tran/genome_tran

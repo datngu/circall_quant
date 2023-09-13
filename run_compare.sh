@@ -19,7 +19,17 @@ export NXF_SINGULARITY_CACHEDIR=/mnt/users/ngda/sofware/singularity
 #reads="/mnt/project/Aqua-Faang/dat/cscqtl/simulation/*_{1,2}.fq.gz"
 
 
+genome=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/genome.fa
+gft=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/annotation.gtf
+cdna=gft=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/cdna.fa
+
+
+nextflow run ciriquant.nf -resume -with-tower -profile cluster \
+    --genome $genome \
+    --cdna $cdna \
+    --annotation $gtf \
+    --reads "/mnt/project/Aqua-Faang/dat/cscqtl/simulation/*_{1,2}.fq.gz" \
+    --circRNA $PWD/data/simulated_circRNA_list.txt
+
+
 #nextflow run main.nf -resume -with-tower -profile cluster --reads "/mnt/project/Aqua-Faang/dat/cscqtl/simulation/*_{1,2}.fq.gz" --circRNA $PWD/data/simulated_circRNA_list.txt
-
-
-nextflow run ciriquant.nf -resume -with-tower -profile cluster --reads "/mnt/project/Aqua-Faang/dat/cscqtl/simulation/*_{1,2}.fq.gz" --circRNA $PWD/data/simulated_circRNA_list.txt
