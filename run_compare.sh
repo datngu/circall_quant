@@ -20,8 +20,8 @@ export NXF_SINGULARITY_CACHEDIR=/mnt/users/ngda/sofware/singularity
 
 
 genome=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/genome.fa
-gft=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/annotation.gtf
-cdna=gft=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/cdna.fa
+gtf=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/annotation.gtf
+cdna=/mnt/project/Aqua-Faang/dat/cscqtl/tcell_cscQTL_dev/data/ref/cdna.fa
 
 
 nextflow run ciriquant.nf -resume -with-tower -profile cluster \
